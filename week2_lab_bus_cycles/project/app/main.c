@@ -23,8 +23,9 @@
 
 //#define MODE_8BIT_EVEN
 //#define MODE_8BIT_ODD
-#define MODE_16BIT
+//#define MODE_16BIT
 //#define MODE_32BIT
+#define MODE_16BIT_ODD
 
 
 /* ----------------------------------------------------------------------------
@@ -55,6 +56,10 @@
     #define CT_LED          (*((volatile uint8_t *) ADDR_LED_15_8))
     #define CT_DIPSW        (*((volatile uint8_t *) ADDR_DIPSW_15_8))
 
+#elif defined (MODE_16BIT_ODD)
+    #define CT_LED          (*((volatile uint16_t *) ADDR_LED_15_8))
+    #define CT_DIPSW        (*((volatile uint16_t *) ADDR_DIPSW_15_8))
+		
 #else
     // halfword access to odd address
     /// STUDENTS: To be programmed
@@ -71,6 +76,10 @@
 
 int main(void)
 {        
+	
+		// 001 (0x1) , 010 (0x2)
+	
+	
     while(1) {
         CT_LED = CT_DIPSW;
     }
