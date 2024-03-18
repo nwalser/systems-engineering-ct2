@@ -85,12 +85,14 @@ uint8_t hal_spi_read_write(uint8_t send_byte)
 
 		SPI1->DR = send_byte;
 
-		while(!((SPI1->SR >> 1) & 0x1)){} // wait for finish send
-		while(!(SPI1->SR & 0x1)) {} // wait for recieve transfer
-	
+		while(!(SPI1->SR & BIT_TXE)){} // wait for finish send
+		while(!(SPI1->SR & BIT_RXNE)) {} // wait for recieve transfer
+		while(SPI1->SR & BIT_BSY) {} // wait for recieve transfer
+
 		wait_10_us();
 		set_ss_pin_high();
 			
+		
 		return SPI1->DR;
 	
     /// END: To be programmed

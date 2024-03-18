@@ -7,11 +7,11 @@ IDE-Version: µVision V5.38.0.0
 Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
 License Information: Nathaniel Walser
 ZHAW
-User-based license: Keil MDK Community
-Valid until: Jun 1 2033. Cached until: Mar 18 2024
+User-based license: Keil MDK Community (non-commercial free of charge)
+Valid until: Jun 1 2033. Cached until: Mar 25 2024
  
 Tool Versions:
-Toolchain:       Keil MDK Community  Version: 5.38.0.0
+Toolchain:       Keil MDK Community (non-commercial free of charge  Version: 5.38.0.0
 Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
 C Compiler:      ArmClang.exe V6.19
 Assembler:       Armasm.exe V6.19
@@ -24,20 +24,20 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.1.0.0
 Dialog DLL:      TARMCM1.DLL V1.14.6.0
  
 <h2>Project:</h2>
-C:\Users\NathanielWalser\Documents\Repositories\systems-engineering-ct2\week3_gpio\project2\project\code_online.uvprojx
+C:\Users\NathanielWalser\Documents\Repositories\systems-engineering-ct2\week3_gpio\project\code_online.uvprojx
 Project File Date:  03/11/2024
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
 Rebuild target 'Target 1'
-compiling hal_gpio.c...
 assembling datainit_ctboard.s...
-compiling hal_fmc.c...
-compiling main.c...
 compiling hal_pwr.c...
-compiling system_ctboard.c...
 assembling startup_ctboard.s...
+compiling hal_fmc.c...
+compiling system_ctboard.c...
+compiling hal_gpio.c...
 compiling hal_rcc.c...
+compiling main.c...
 compiling hal_timer.c...
 linking...
 Program Size: Code=4800 RO-data=924 RW-data=0 ZI-data=8192  
@@ -65,44 +65,44 @@ Package Vendor: InES
 <h2>Collection of Component Files used:</h2>
 
    * Component: InES::Device:Startup:4.0.4
-      Include file:  Device/Include/reg_ctboard.h
       Include file:  Device/Include/system_ctboard.h
-      Source file:   Device/Source/system_ctboard.c
-      Source file:   Device/Source/startup_ctboard.s
-      Source file:   Device/Source/datainit_ctboard.s
       Include file:  Device/Include/m0/platform_ctboard.h
+      Source file:   Device/Source/datainit_ctboard.s
+      Source file:   Device/Source/system_ctboard.c
+      Include file:  Device/Include/reg_ctboard.h
       Include file:  Device/Include/reg_stm32f4xx.h
+      Source file:   Device/Source/startup_ctboard.s
 
    * Component: InES::HAL:FMC:4.0.4
-      Include file:  HAL/Include/hal_common.h
       Include file:  Device/Include/reg_stm32f4xx.h
-      Source file:   HAL/Source/hal_fmc.c
+      Include file:  HAL/Include/hal_common.h
       Include file:  HAL/Include/hal_fmc.h
+      Source file:   HAL/Source/hal_fmc.c
 
    * Component: InES::HAL:GPIO:4.0.4
-      Include file:  HAL/Include/hal_gpio.h
       Source file:   HAL/Source/hal_gpio.c
       Include file:  HAL/Include/hal_common.h
       Include file:  Device/Include/reg_stm32f4xx.h
+      Include file:  HAL/Include/hal_gpio.h
 
    * Component: InES::HAL:PWR:4.0.4
-      Source file:   HAL/Source/hal_pwr.c
       Include file:  Device/Include/reg_stm32f4xx.h
-      Include file:  HAL/Include/hal_pwr.h
       Include file:  HAL/Include/hal_common.h
+      Source file:   HAL/Source/hal_pwr.c
+      Include file:  HAL/Include/hal_pwr.h
 
    * Component: InES::HAL:RCC:4.0.4
       Include file:  Device/Include/reg_stm32f4xx.h
-      Include file:  HAL/Include/hal_common.h
       Include file:  HAL/Include/hal_rcc.h
       Source file:   HAL/Source/hal_rcc.c
+      Include file:  HAL/Include/hal_common.h
 
    * Component: InES::HAL:TIMER:4.0.4
       Include file:  Device/Include/reg_stm32f4xx.h
       Include file:  HAL/Include/hal_common.h
-      Source file:   HAL/Source/hal_timer.c
       Include file:  HAL/Include/hal_timer.h
-Build Time Elapsed:  00:00:01
+      Source file:   HAL/Source/hal_timer.c
+Build Time Elapsed:  00:00:02
 </pre>
 </body>
 </html>
