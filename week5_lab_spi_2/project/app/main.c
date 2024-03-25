@@ -40,7 +40,7 @@ int main(void)
     set_font_zoom_factor(3, 2);
     set_font_color(COLOR_BLUE, COLOR_TRANSPARENT);
     set_display_font(FONT_SWISS30_BOLD_PROP);
-    print_text_on_display(50, 25, (uint8_t *)"SRY WING");
+		print_text_on_display(50, 25, (uint8_t *)"(° _ °)");
     fill_area(50, 80, 435, 82, COLOR_GREEN);
 
     /* draw touch-button and activate touchscreen */
@@ -62,7 +62,13 @@ int main(void)
 			if(length == 0)
 				continue;
 		
-			CT_LED->BYTE.LED7_0 = read_buffer[3];
+			if(read_buffer[3] == 0x01){
+					CT_LED->BYTE.LED7_0 = 0x00;
+			}
+			
+			if(read_buffer[3] == 0x02){
+					CT_LED->BYTE.LED7_0 = 0xFF;
+			}
 				
 			//CT_LED->BYTE.LED7_0 = send_byte;
 

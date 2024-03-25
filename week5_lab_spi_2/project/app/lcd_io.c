@@ -61,6 +61,11 @@ uint8_t read_display_buffer(uint8_t *readBuffer)
 	
     send_read_display_buffer_request();
 
+		uint8_t rec_byte = hal_spi_read_write(0x00);
+
+		if(rec_byte != ACK_CHAR)
+			return 0;
+		
 		uint8_t dc1 = hal_spi_read_write(0x00);
 		
 		if(dc1 != 0x11)
@@ -94,17 +99,15 @@ uint8_t read_display_buffer(uint8_t *readBuffer)
  * according to description in header file
  */
 uint8_t write_cmd_to_display(const uint8_t *cmdBuffer, uint8_t length)
-{
-    /// STUDENTS: To be programmed
-	
+{	
 		uint8_t send_buffer_size = length+4;
     uint8_t send_buffer[send_buffer_size];
 		
-		uint8_t startByte = 0x11;
+		uint8_t dc1Byte = 0x11;
 		uint8_t lengthByte = length + 1;
 		uint8_t escByte = 0x1B;
 	
-		send_buffer[0] = startByte; 
+		send_buffer[0] = dc1Byte; 
 		send_buffer[1] = lengthByte; 
 		send_buffer[2] = escByte; 
 	
@@ -131,19 +134,14 @@ uint8_t write_cmd_to_display(const uint8_t *cmdBuffer, uint8_t length)
 			return 1;
 		
 		return 0;
-	
-    /// END: To be programmed
 }
-
 
 /*
  * Assemble and send a packet to trigger the reading of the display buffer
  * Uses the sequence "<DC2>, 0x01, 0x53, checksum" according to datasheet
  */
 static void send_read_display_buffer_request(void)
-{
-    /// STUDENTS: To be programmed
-		
+{		
 		uint8_t send_buffer_size = 4;
     uint8_t send_buffer[send_buffer_size];
 	
@@ -160,11 +158,7 @@ static void send_read_display_buffer_request(void)
 		send_buffer[send_buffer_size-1] = checksum; 	
 		
 		for(int i = 0; i < send_buffer_size; i++){
-				hal_spi_read_write(send_buffer[i]);
+			hal_spi_read_write(send_buffer[i]);
 		}
-		
-		uint8_t rec_byte = hal_spi_read_write(0x00);
-	
-    /// END: To be programmed
 }
 
