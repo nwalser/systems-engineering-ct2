@@ -3,11 +3,11 @@
 <title>Static Call Graph - [.\build\spi_display.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\build\spi_display.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6190004: Last Updated: Mon Mar 25 16:13:52 2024
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6190004: Last Updated: Mon Mar 25 16:28:57 2024
 <BR><P>
-<H3>Maximum Stack Usage =        796 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =        772 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
-main &rArr; define_touch_button &rArr; write_cmd_to_display &rArr; write_cmd &rArr; hal_spi_read_write &rArr; wait_10_us
+main &rArr; define_touch_button &rArr; write_cmd_to_display &rArr; hal_spi_read_write &rArr; wait_10_us
 <P>
 <H3>
 Mutually Recursive functions
@@ -233,8 +233,8 @@ Global Symbols
 <P><STRONG><a name="[d7]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))
 
 <P><STRONG><a name="[6e]"></a>__rt_entry_main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
-<BR><BR>[Stack]<UL><LI>Max Depth = 796 + Unknown Stack Size
-<LI>Call Chain = __rt_entry_main &rArr; main &rArr; define_touch_button &rArr; write_cmd_to_display &rArr; write_cmd &rArr; hal_spi_read_write &rArr; wait_10_us
+<BR><BR>[Stack]<UL><LI>Max Depth = 772 + Unknown Stack Size
+<LI>Call Chain = __rt_entry_main &rArr; main &rArr; define_touch_button &rArr; write_cmd_to_display &rArr; hal_spi_read_write &rArr; wait_10_us
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
 <LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
@@ -260,7 +260,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[74]"></a>clear_display</STRONG> (Thumb, 24 bytes, Stack size 24 bytes, cmd_lcd.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = clear_display &rArr; write_cmd_to_display &rArr; write_cmd &rArr; hal_spi_read_write &rArr; wait_10_us
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = clear_display &rArr; write_cmd_to_display &rArr; hal_spi_read_write &rArr; wait_10_us
 </UL>
 <BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_cmd_to_display
 </UL>
@@ -269,7 +269,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[76]"></a>init_display</STRONG> (Thumb, 40 bytes, Stack size 16 bytes, cmd_lcd.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = init_display &rArr; set_font_zoom_factor &rArr; write_cmd_to_display &rArr; write_cmd &rArr; hal_spi_read_write &rArr; wait_10_us
+<BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = init_display &rArr; set_font_zoom_factor &rArr; write_cmd_to_display &rArr; hal_spi_read_write &rArr; wait_10_us
 </UL>
 <BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_font_zoom_factor
 <LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_display_color
@@ -281,7 +281,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[78]"></a>init_terminal</STRONG> (Thumb, 24 bytes, Stack size 24 bytes, cmd_lcd.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = init_terminal &rArr; write_cmd_to_display &rArr; write_cmd &rArr; hal_spi_read_write &rArr; wait_10_us
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = init_terminal &rArr; write_cmd_to_display &rArr; hal_spi_read_write &rArr; wait_10_us
 </UL>
 <BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_cmd_to_display
 </UL>
@@ -289,7 +289,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[79]"></a>set_display_color</STRONG> (Thumb, 78 bytes, Stack size 32 bytes, cmd_lcd.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = set_display_color &rArr; write_cmd_to_display &rArr; write_cmd &rArr; hal_spi_read_write &rArr; wait_10_us
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = set_display_color &rArr; write_cmd_to_display &rArr; hal_spi_read_write &rArr; wait_10_us
 </UL>
 <BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_cmd_to_display
 </UL>
@@ -298,7 +298,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[7a]"></a>set_font_zoom_factor</STRONG> (Thumb, 38 bytes, Stack size 32 bytes, cmd_lcd.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = set_font_zoom_factor &rArr; write_cmd_to_display &rArr; write_cmd &rArr; hal_spi_read_write &rArr; wait_10_us
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = set_font_zoom_factor &rArr; write_cmd_to_display &rArr; hal_spi_read_write &rArr; wait_10_us
 </UL>
 <BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_cmd_to_display
 </UL>
@@ -307,7 +307,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[7b]"></a>set_display_font</STRONG> (Thumb, 32 bytes, Stack size 24 bytes, cmd_lcd.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = set_display_font &rArr; write_cmd_to_display &rArr; write_cmd &rArr; hal_spi_read_write &rArr; wait_10_us
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = set_display_font &rArr; write_cmd_to_display &rArr; hal_spi_read_write &rArr; wait_10_us
 </UL>
 <BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_cmd_to_display
 </UL>
@@ -315,7 +315,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[7c]"></a>print_text_on_display</STRONG> (Thumb, 160 bytes, Stack size 296 bytes, cmd_lcd.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 356<LI>Call Chain = print_text_on_display &rArr; write_cmd_to_display &rArr; write_cmd &rArr; hal_spi_read_write &rArr; wait_10_us
+<BR><BR>[Stack]<UL><LI>Max Depth = 332<LI>Call Chain = print_text_on_display &rArr; write_cmd_to_display &rArr; hal_spi_read_write &rArr; wait_10_us
 </UL>
 <BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_cmd_to_display
 </UL>
@@ -323,7 +323,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[7d]"></a>set_font_color</STRONG> (Thumb, 78 bytes, Stack size 32 bytes, cmd_lcd.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = set_font_color &rArr; write_cmd_to_display &rArr; write_cmd &rArr; hal_spi_read_write &rArr; wait_10_us
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = set_font_color &rArr; write_cmd_to_display &rArr; hal_spi_read_write &rArr; wait_10_us
 </UL>
 <BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_cmd_to_display
 </UL>
@@ -331,7 +331,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[7e]"></a>fill_area</STRONG> (Thumb, 92 bytes, Stack size 64 bytes, cmd_lcd.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 124<LI>Call Chain = fill_area &rArr; write_cmd_to_display &rArr; write_cmd &rArr; hal_spi_read_write &rArr; wait_10_us
+<BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = fill_area &rArr; write_cmd_to_display &rArr; hal_spi_read_write &rArr; wait_10_us
 </UL>
 <BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_cmd_to_display
 </UL>
@@ -339,7 +339,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[7f]"></a>set_cursor_on_off</STRONG> (Thumb, 32 bytes, Stack size 24 bytes, cmd_lcd.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = set_cursor_on_off &rArr; write_cmd_to_display &rArr; write_cmd &rArr; hal_spi_read_write &rArr; wait_10_us
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = set_cursor_on_off &rArr; write_cmd_to_display &rArr; hal_spi_read_write &rArr; wait_10_us
 </UL>
 <BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_cmd_to_display
 </UL>
@@ -347,7 +347,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[80]"></a>set_touch_font</STRONG> (Thumb, 32 bytes, Stack size 24 bytes, cmd_touch.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = set_touch_font &rArr; write_cmd_to_display &rArr; write_cmd &rArr; hal_spi_read_write &rArr; wait_10_us
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = set_touch_font &rArr; write_cmd_to_display &rArr; hal_spi_read_write &rArr; wait_10_us
 </UL>
 <BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_cmd_to_display
 </UL>
@@ -355,7 +355,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[81]"></a>set_touch_font_zoom_factor</STRONG> (Thumb, 40 bytes, Stack size 32 bytes, cmd_touch.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = set_touch_font_zoom_factor &rArr; write_cmd_to_display &rArr; write_cmd &rArr; hal_spi_read_write &rArr; wait_10_us
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = set_touch_font_zoom_factor &rArr; write_cmd_to_display &rArr; hal_spi_read_write &rArr; wait_10_us
 </UL>
 <BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_cmd_to_display
 </UL>
@@ -363,7 +363,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[82]"></a>set_touch_font_color</STRONG> (Thumb, 78 bytes, Stack size 32 bytes, cmd_touch.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = set_touch_font_color &rArr; write_cmd_to_display &rArr; write_cmd &rArr; hal_spi_read_write &rArr; wait_10_us
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = set_touch_font_color &rArr; write_cmd_to_display &rArr; hal_spi_read_write &rArr; wait_10_us
 </UL>
 <BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_cmd_to_display
 </UL>
@@ -371,7 +371,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[83]"></a>set_touch_panel_color</STRONG> (Thumb, 160 bytes, Stack size 64 bytes, cmd_touch.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 124<LI>Call Chain = set_touch_panel_color &rArr; write_cmd_to_display &rArr; write_cmd &rArr; hal_spi_read_write &rArr; wait_10_us
+<BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = set_touch_panel_color &rArr; write_cmd_to_display &rArr; hal_spi_read_write &rArr; wait_10_us
 </UL>
 <BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_cmd_to_display
 </UL>
@@ -379,7 +379,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[84]"></a>set_touch_enable</STRONG> (Thumb, 30 bytes, Stack size 24 bytes, cmd_touch.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = set_touch_enable &rArr; write_cmd_to_display &rArr; write_cmd &rArr; hal_spi_read_write &rArr; wait_10_us
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = set_touch_enable &rArr; write_cmd_to_display &rArr; hal_spi_read_write &rArr; wait_10_us
 </UL>
 <BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_cmd_to_display
 </UL>
@@ -387,7 +387,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[85]"></a>define_touch_button</STRONG> (Thumb, 198 bytes, Stack size 320 bytes, cmd_touch.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 380<LI>Call Chain = define_touch_button &rArr; write_cmd_to_display &rArr; write_cmd &rArr; hal_spi_read_write &rArr; wait_10_us
+<BR><BR>[Stack]<UL><LI>Max Depth = 356<LI>Call Chain = define_touch_button &rArr; write_cmd_to_display &rArr; hal_spi_read_write &rArr; wait_10_us
 </UL>
 <BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_cmd_to_display
 </UL>
@@ -419,8 +419,9 @@ Global Symbols
 <LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_ss_pin_low
 <LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_ss_pin_high
 </UL>
-<BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_cmd
-<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_display_buffer
+<BR>[Called By]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_display_buffer
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_read_display_buffer_request
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_cmd_to_display
 </UL>
 
 <P><STRONG><a name="[77]"></a>init_display_interface</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, lcd_io.o(.text))
@@ -432,29 +433,20 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_display
 </UL>
 
-<P><STRONG><a name="[8c]"></a>read_display_buffer</STRONG> (Thumb, 244 bytes, Stack size 64 bytes, lcd_io.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = read_display_buffer &rArr; write_cmd &rArr; hal_spi_read_write &rArr; wait_10_us
+<P><STRONG><a name="[8c]"></a>read_display_buffer</STRONG> (Thumb, 228 bytes, Stack size 56 bytes, lcd_io.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = read_display_buffer &rArr; send_read_display_buffer_request &rArr; hal_spi_read_write &rArr; wait_10_us
 </UL>
-<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_cmd
+<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_read_display_buffer_request
 <LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_spi_read_write
 <LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_sbuf_get_state
 </UL>
 <BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[8e]"></a>write_cmd</STRONG> (Thumb, 362 bytes, Stack size 16 bytes, lcd_io.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = write_cmd &rArr; hal_spi_read_write &rArr; wait_10_us
+<P><STRONG><a name="[75]"></a>write_cmd_to_display</STRONG> (Thumb, 356 bytes, Stack size 16 bytes, lcd_io.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = write_cmd_to_display &rArr; hal_spi_read_write &rArr; wait_10_us
 </UL>
 <BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_spi_read_write
-</UL>
-<BR>[Called By]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_display_buffer
-<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_cmd_to_display
-</UL>
-
-<P><STRONG><a name="[75]"></a>write_cmd_to_display</STRONG> (Thumb, 30 bytes, Stack size 24 bytes, lcd_io.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = write_cmd_to_display &rArr; write_cmd &rArr; hal_spi_read_write &rArr; wait_10_us
-</UL>
-<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_cmd
 </UL>
 <BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;define_touch_button
 <LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_touch_enable
@@ -474,7 +466,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[65]"></a>main</STRONG> (Thumb, 204 bytes, Stack size 416 bytes, main.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 796<LI>Call Chain = main &rArr; define_touch_button &rArr; write_cmd_to_display &rArr; write_cmd &rArr; hal_spi_read_write &rArr; wait_10_us
+<BR><BR>[Stack]<UL><LI>Max Depth = 772<LI>Call Chain = main &rArr; define_touch_button &rArr; write_cmd_to_display &rArr; hal_spi_read_write &rArr; wait_10_us
 </UL>
 <BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_display_buffer
 <LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;define_touch_button
@@ -1133,6 +1125,14 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = wait_10_us
 </UL>
 <BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_spi_read_write
+</UL>
+
+<P><STRONG><a name="[8e]"></a>send_read_display_buffer_request</STRONG> (Thumb, 216 bytes, Stack size 16 bytes, lcd_io.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = send_read_display_buffer_request &rArr; hal_spi_read_write &rArr; wait_10_us
+</UL>
+<BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_spi_read_write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_display_buffer
 </UL>
 
 <P><STRONG><a name="[91]"></a>init_SystemClock</STRONG> (Thumb, 196 bytes, Stack size 40 bytes, system_ctboard.o(.text))

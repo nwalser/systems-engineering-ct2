@@ -59,12 +59,7 @@ uint8_t read_display_buffer(uint8_t *readBuffer)
 		if(!hal_sbuf_get_state())
 			return 0;
 	
-    uint8_t command_buffer[1];
-		command_buffer[0] = 0x53;
-		uint8_t command_result = write_cmd(command_buffer, 1, 0x12);
-
-		if(command_result != 0)
-			return 0;
+    send_read_display_buffer_request();
 
 		uint8_t dc1 = hal_spi_read_write(0x00);
 		
@@ -78,6 +73,8 @@ uint8_t read_display_buffer(uint8_t *readBuffer)
 		}
 		
 		uint8_t sum = 0;
+		sum += dc1;
+		sum += length;
 		for(int i = 0; i < length; i++){
 			sum += readBuffer[i];
 		}
@@ -96,20 +93,14 @@ uint8_t read_display_buffer(uint8_t *readBuffer)
 /*
  * according to description in header file
  */
-
-uint8_t write_cmd_to_display(const uint8_t *cmdBuffer, uint8_t length){
-	return write_cmd(cmdBuffer, length, 0x11);
-}
-
-uint8_t write_cmd(const uint8_t *cmdBuffer, uint8_t length, uint8_t dc)
+uint8_t write_cmd_to_display(const uint8_t *cmdBuffer, uint8_t length)
 {
     /// STUDENTS: To be programmed
-	
 	
 		uint8_t send_buffer_size = length+4;
     uint8_t send_buffer[send_buffer_size];
 		
-		uint8_t startByte = dc;
+		uint8_t startByte = 0x11;
 		uint8_t lengthByte = length + 1;
 		uint8_t escByte = 0x1B;
 	
@@ -153,6 +144,27 @@ static void send_read_display_buffer_request(void)
 {
     /// STUDENTS: To be programmed
 		
+		uint8_t send_buffer_size = 4;
+    uint8_t send_buffer[send_buffer_size];
+	
+		send_buffer[0] = 0x12; 
+		send_buffer[1] = 0x01; 
+		send_buffer[2] = 'S'; 
+	
+		// checksum
+		uint8_t sum = 0;
+		for(int i = 0; i < send_buffer_size-1; i++){
+			sum += send_buffer[i];
+		}
+		uint8_t checksum = sum % 256;
+		send_buffer[send_buffer_size-1] = checksum; 	
+		
+		for(int i = 0; i < send_buffer_size; i++){
+				hal_spi_read_write(send_buffer[i]);
+		}
+		
+		uint8_t rec_byte = hal_spi_read_write(0x00);
+	
     /// END: To be programmed
 }
 
