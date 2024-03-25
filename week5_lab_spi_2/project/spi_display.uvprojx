@@ -7,7 +7,7 @@
 
   <Targets>
     <Target>
-      <TargetName>Target 1</TargetName>
+      <TargetName>SPI-Display</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
       <pCCUsed>6190000::V6.19::ARMCLANG</pCCUsed>
@@ -49,7 +49,7 @@
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
           <OutputDirectory>.\build\</OutputDirectory>
-          <OutputName>spi_lab</OutputName>
+          <OutputName>spi_display</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>0</CreateHexFile>
@@ -134,11 +134,11 @@
             <RunIndependent>0</RunIndependent>
             <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
             <Capability>1</Capability>
-            <DriverSelection>-1</DriverSelection>
+            <DriverSelection>4096</DriverSelection>
           </Flash1>
           <bUseTDR>1</bUseTDR>
           <Flash2>BIN\UL2CM3.DLL</Flash2>
-          <Flash3></Flash3>
+          <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -331,8 +331,8 @@
             <useXO>0</useXO>
             <v6Lang>3</v6Lang>
             <v6LangP>3</v6LangP>
-            <vShortEn>0</vShortEn>
-            <vShortWch>0</vShortWch>
+            <vShortEn>1</vShortEn>
+            <vShortWch>1</vShortWch>
             <v6Lto>0</v6Lto>
             <v6WtE>0</v6WtE>
             <v6Rtti>0</v6Rtti>
@@ -382,17 +382,111 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>app</GroupName>
+          <GroupName>Source SPI-Display</GroupName>
+          <GroupOption>
+            <CommonProperty>
+              <UseCPPCompiler>0</UseCPPCompiler>
+              <RVCTCodeConst>0</RVCTCodeConst>
+              <RVCTZI>0</RVCTZI>
+              <RVCTOtherData>0</RVCTOtherData>
+              <ModuleSelection>0</ModuleSelection>
+              <IncludeInBuild>2</IncludeInBuild>
+              <AlwaysBuild>2</AlwaysBuild>
+              <GenerateAssemblyFile>2</GenerateAssemblyFile>
+              <AssembleAssemblyFile>2</AssembleAssemblyFile>
+              <PublicsOnly>2</PublicsOnly>
+              <StopOnExitCode>11</StopOnExitCode>
+              <CustomArgument></CustomArgument>
+              <IncludeLibraryModules></IncludeLibraryModules>
+              <ComprImg>1</ComprImg>
+            </CommonProperty>
+            <GroupArmAds>
+              <Cads>
+                <interw>2</interw>
+                <Optim>0</Optim>
+                <oTime>2</oTime>
+                <SplitLS>2</SplitLS>
+                <OneElfS>2</OneElfS>
+                <Strict>2</Strict>
+                <EnumInt>2</EnumInt>
+                <PlainCh>2</PlainCh>
+                <Ropi>2</Ropi>
+                <Rwpi>2</Rwpi>
+                <wLevel>3</wLevel>
+                <uThumb>2</uThumb>
+                <uSurpInc>2</uSurpInc>
+                <uC99>2</uC99>
+                <uGnu>2</uGnu>
+                <useXO>2</useXO>
+                <v6Lang>0</v6Lang>
+                <v6LangP>0</v6LangP>
+                <vShortEn>2</vShortEn>
+                <vShortWch>2</vShortWch>
+                <v6Lto>2</v6Lto>
+                <v6WtE>2</v6WtE>
+                <v6Rtti>2</v6Rtti>
+                <VariousControls>
+                  <MiscControls></MiscControls>
+                  <Define></Define>
+                  <Undefine></Undefine>
+                  <IncludePath></IncludePath>
+                </VariousControls>
+              </Cads>
+              <Aads>
+                <interw>2</interw>
+                <Ropi>2</Ropi>
+                <Rwpi>2</Rwpi>
+                <thumb>2</thumb>
+                <SplitLS>2</SplitLS>
+                <SwStkChk>2</SwStkChk>
+                <NoWarn>2</NoWarn>
+                <uSurpInc>2</uSurpInc>
+                <useXO>2</useXO>
+                <ClangAsOpt>0</ClangAsOpt>
+                <VariousControls>
+                  <MiscControls></MiscControls>
+                  <Define></Define>
+                  <Undefine></Undefine>
+                  <IncludePath></IncludePath>
+                </VariousControls>
+              </Aads>
+            </GroupArmAds>
+          </GroupOption>
           <Files>
             <File>
-              <FileName>test.c</FileName>
+              <FileName>cmd_lcd.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\app\test.c</FilePath>
+              <FilePath>.\app\cmd_lcd.c</FilePath>
+            </File>
+            <File>
+              <FileName>cmd_touch.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\app\cmd_touch.c</FilePath>
+            </File>
+            <File>
+              <FileName>hal_mocked.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\app\hal_mocked.c</FilePath>
+            </File>
+            <File>
+              <FileName>hal_sbuf.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\app\hal_sbuf.c</FilePath>
             </File>
             <File>
               <FileName>hal_spi.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\app\hal_spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>lcd_io.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\app\lcd_io.c</FilePath>
+            </File>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\app\main.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -412,89 +506,89 @@
       <component Cclass="Device" Cgroup="Startup" Cvendor="InES" Cversion="4.0.4" condition="SYSTEM_M0">
         <package name="CTBoard14_DFP" schemaVersion="1.1" url="https://ennis.zhaw.ch/pack/" vendor="InES" version="4.0.4"/>
         <targetInfos>
-          <targetInfo name="Target 1"/>
+          <targetInfo name="SPI-Display"/>
         </targetInfos>
       </component>
       <component Cclass="HAL" Cgroup="FMC" Cvendor="InES" Cversion="4.0.4" condition="HAL">
         <package name="CTBoard14_DFP" schemaVersion="1.1" url="https://ennis.zhaw.ch/pack/" vendor="InES" version="4.0.4"/>
         <targetInfos>
-          <targetInfo name="Target 1"/>
+          <targetInfo name="SPI-Display"/>
         </targetInfos>
       </component>
       <component Cclass="HAL" Cgroup="GPIO" Cvendor="InES" Cversion="4.0.4" condition="HAL">
         <package name="CTBoard14_DFP" schemaVersion="1.1" url="https://ennis.zhaw.ch/pack/" vendor="InES" version="4.0.4"/>
         <targetInfos>
-          <targetInfo name="Target 1"/>
+          <targetInfo name="SPI-Display"/>
         </targetInfos>
       </component>
       <component Cclass="HAL" Cgroup="PWR" Cvendor="InES" Cversion="4.0.4" condition="HAL">
         <package name="CTBoard14_DFP" schemaVersion="1.1" url="https://ennis.zhaw.ch/pack/" vendor="InES" version="4.0.4"/>
         <targetInfos>
-          <targetInfo name="Target 1"/>
+          <targetInfo name="SPI-Display"/>
         </targetInfos>
       </component>
       <component Cclass="HAL" Cgroup="RCC" Cvendor="InES" Cversion="4.0.4" condition="HAL">
         <package name="CTBoard14_DFP" schemaVersion="1.1" url="https://ennis.zhaw.ch/pack/" vendor="InES" version="4.0.4"/>
         <targetInfos>
-          <targetInfo name="Target 1"/>
+          <targetInfo name="SPI-Display"/>
         </targetInfos>
       </component>
     </components>
     <files>
-      <file attr="config" category="source" name="Device\Source\datainit_ctboard.s" version="4.0.4">
+      <file attr="config" category="source" name="Device\Source\datainit_ctboard.s">
         <instance index="0">RTE\Device\CT_Board_HS14_M0\datainit_ctboard.s</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="InES" Cversion="4.0.4" condition="SYSTEM_M0"/>
         <package name="CTBoard14_DFP" schemaVersion="1.1" url="https://ennis.zhaw.ch/pack/" vendor="InES" version="4.0.4"/>
         <targetInfos>
-          <targetInfo name="Target 1"/>
+          <targetInfo name="SPI-Display"/>
         </targetInfos>
       </file>
-      <file attr="config" category="source" name="Device\Source\startup_ctboard.s" version="4.0.4">
+      <file attr="config" category="source" name="Device\Source\startup_ctboard.s">
         <instance index="0">RTE\Device\CT_Board_HS14_M0\startup_ctboard.s</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="InES" Cversion="4.0.4" condition="SYSTEM_M0"/>
         <package name="CTBoard14_DFP" schemaVersion="1.1" url="https://ennis.zhaw.ch/pack/" vendor="InES" version="4.0.4"/>
         <targetInfos>
-          <targetInfo name="Target 1"/>
+          <targetInfo name="SPI-Display"/>
         </targetInfos>
       </file>
-      <file attr="config" category="source" name="Device\Source\system_ctboard.c" version="4.0.4">
+      <file attr="config" category="source" name="Device\Source\system_ctboard.c">
         <instance index="0">RTE\Device\CT_Board_HS14_M0\system_ctboard.c</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="InES" Cversion="4.0.4" condition="SYSTEM_M0"/>
         <package name="CTBoard14_DFP" schemaVersion="1.1" url="https://ennis.zhaw.ch/pack/" vendor="InES" version="4.0.4"/>
         <targetInfos>
-          <targetInfo name="Target 1"/>
+          <targetInfo name="SPI-Display"/>
         </targetInfos>
       </file>
-      <file attr="config" category="source" name="HAL\Source\hal_fmc.c" version="4.0.4">
+      <file attr="config" category="source" name="HAL\Source\hal_fmc.c">
         <instance index="0">RTE\HAL\CT_Board_HS14_M0\hal_fmc.c</instance>
         <component Cclass="HAL" Cgroup="FMC" Cvendor="InES" Cversion="4.0.4" condition="HAL"/>
         <package name="CTBoard14_DFP" schemaVersion="1.1" url="https://ennis.zhaw.ch/pack/" vendor="InES" version="4.0.4"/>
         <targetInfos>
-          <targetInfo name="Target 1"/>
+          <targetInfo name="SPI-Display"/>
         </targetInfos>
       </file>
-      <file attr="config" category="source" name="HAL\Source\hal_gpio.c" version="4.0.4">
+      <file attr="config" category="source" name="HAL\Source\hal_gpio.c">
         <instance index="0">RTE\HAL\CT_Board_HS14_M0\hal_gpio.c</instance>
         <component Cclass="HAL" Cgroup="GPIO" Cvendor="InES" Cversion="4.0.4" condition="HAL"/>
         <package name="CTBoard14_DFP" schemaVersion="1.1" url="https://ennis.zhaw.ch/pack/" vendor="InES" version="4.0.4"/>
         <targetInfos>
-          <targetInfo name="Target 1"/>
+          <targetInfo name="SPI-Display"/>
         </targetInfos>
       </file>
-      <file attr="config" category="source" name="HAL\Source\hal_pwr.c" version="4.0.4">
+      <file attr="config" category="source" name="HAL\Source\hal_pwr.c">
         <instance index="0">RTE\HAL\CT_Board_HS14_M0\hal_pwr.c</instance>
         <component Cclass="HAL" Cgroup="PWR" Cvendor="InES" Cversion="4.0.4" condition="HAL"/>
         <package name="CTBoard14_DFP" schemaVersion="1.1" url="https://ennis.zhaw.ch/pack/" vendor="InES" version="4.0.4"/>
         <targetInfos>
-          <targetInfo name="Target 1"/>
+          <targetInfo name="SPI-Display"/>
         </targetInfos>
       </file>
-      <file attr="config" category="source" name="HAL\Source\hal_rcc.c" version="4.0.4">
+      <file attr="config" category="source" name="HAL\Source\hal_rcc.c">
         <instance index="0">RTE\HAL\CT_Board_HS14_M0\hal_rcc.c</instance>
         <component Cclass="HAL" Cgroup="RCC" Cvendor="InES" Cversion="4.0.4" condition="HAL"/>
         <package name="CTBoard14_DFP" schemaVersion="1.1" url="https://ennis.zhaw.ch/pack/" vendor="InES" version="4.0.4"/>
         <targetInfos>
-          <targetInfo name="Target 1"/>
+          <targetInfo name="SPI-Display"/>
         </targetInfos>
       </file>
     </files>
