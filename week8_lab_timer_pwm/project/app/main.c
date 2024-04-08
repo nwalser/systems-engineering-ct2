@@ -36,7 +36,6 @@
 
 
 
-
 /// END: To be programmed
 
 /* -- Function prototypes
@@ -56,9 +55,23 @@ static uint16_t cycle_counter_4bit = 0;
 int main(void)
 {
     /// STUDENTS: To be programmed
+	
+		CT_LED->BYTE.LED31_24 = 0x0; // reset led values
 
-
-
+		tim3_init();
+		tim4_init();
+		while(1) {
+			if(CT_DIPSW->BYTE.S31_24 & 0b10000000){
+				tim3_set_compare_register(PWM_CH1, cycle_counter_4bit);
+				tim3_set_compare_register(PWM_CH2, 0xF - cycle_counter_4bit);
+			}
+			else{
+				tim3_set_compare_register(PWM_CH1, CT_DIPSW->BYTE.S7_0 & 0b1111);
+				tim3_set_compare_register(PWM_CH2, CT_DIPSW->BYTE.S15_8 & 0b1111);
+			}
+			
+			tim3_set_compare_register(PWM_CH3, CT_DIPSW->BYTE.S23_16 & 0b1111);
+		}
 
     /// END: To be programmed
 }
@@ -71,8 +84,13 @@ void TIM4_IRQHandler(void)
 {
     /// STUDENTS: To be programmed
 
+		tim4_reset_uif();
+		CT_LED->BYTE.LED31_24 = ~CT_LED->BYTE.LED31_24;
 
-
-
+		cycle_counter_4bit++;
+		if(cycle_counter_4bit > 15){
+			cycle_counter_4bit=0;
+		}
+	
     /// END: To be programmed
 }

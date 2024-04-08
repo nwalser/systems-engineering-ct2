@@ -18,7 +18,7 @@
 
 /* user includes */
 #include "timer.h"
-
+#include "reg_ctboard.h"
 
 /* -- Macros
  * ------------------------------------------------------------------------- */
@@ -85,9 +85,20 @@ void tim3_init(void)
     /* add specific configuration for timer3 */
     /// STUDENTS: To be programmed
 
+		TIM3->CR1 = (0b0 << 4); // upcounter, reset other values
+		TIM3->PSC = 7; // prescaler
+		TIM3->ARR = 60000-1; // reset 
+		TIM3->CCMR1 |= (0b110 << 4); // ocmr mode 1
+		TIM3->CCMR1 |= (0b110 << 12); // ocmr mode 1
+		TIM3->CCMR2 |= (0b110 << 4); // ocmr mode 1
 
+		TIM3->CCER = 0x0;		
+		TIM3->CCER |= (0b1 << 0);		
+		TIM3->CCER |= (0b1 << 4);		
+		TIM3->CCER |= (0b1 << 8);		
 
-
+		TIM3->CR1 |= (0b1 << 0); // enable timer
+		
     /// END: To be programmed
 }
 
@@ -107,9 +118,13 @@ void tim4_init(void)
 
     /* add specific configuration for timer4 */
     /// STUDENTS: To be programmed
-
-
-
+	
+		TIM4->PSC = 8400; // prescaler
+		TIM4->ARR = 10000-1; // reset 
+		TIM4->CR1 = 0x0000; // default value
+		TIM4->CR1 |= (0b1 << 4); // downcounter
+		TIM4->DIER = (0b1 << 0); // update interrupt enable, reset other values
+		TIM4->CR1 |= (0b1 << 0); // enable timer
 
     /// END: To be programmed
 
@@ -133,9 +148,22 @@ void tim4_reset_uif(void)
 void tim3_set_compare_register(pwm_channel_t channel, uint16_t value)
 {
     /// STUDENTS: To be programmed
-
-
-
+		uint16_t scaled = ((uint32_t) value) * 60000 / 15; 
+	
+		switch(channel){
+			case PWM_CH1:
+				TIM3->CCR1 = scaled;
+				break;
+			case PWM_CH2:
+				TIM3->CCR2 = scaled;
+				break;
+			case PWM_CH3:
+				TIM3->CCR3 = scaled;
+				break;
+			case PWM_CH4:
+				TIM3->CCR4 = scaled;
+				break;
+		}
 
     /// END: To be programmed
 }
