@@ -60,6 +60,7 @@ int main(void)
 
 		tim3_init();
 		tim4_init();
+	
 		while(1) {
 			if(CT_DIPSW->BYTE.S31_24 & 0b10000000){
 				tim3_set_compare_register(PWM_CH1, cycle_counter_4bit);

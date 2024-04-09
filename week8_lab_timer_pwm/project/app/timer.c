@@ -86,11 +86,11 @@ void tim3_init(void)
     /// STUDENTS: To be programmed
 
 		TIM3->CR1 = (0b0 << 4); // upcounter, reset other values
-		TIM3->PSC = 7; // prescaler
+		TIM3->PSC = 7-1; // prescaler
 		TIM3->ARR = 60000-1; // reset 
-		TIM3->CCMR1 |= (0b110 << 4); // ocmr mode 1
-		TIM3->CCMR1 |= (0b110 << 12); // ocmr mode 1
-		TIM3->CCMR2 |= (0b110 << 4); // ocmr mode 1
+		TIM3->CCMR1 |= (0b110 << 4); // oc1m mode 1
+		TIM3->CCMR1 |= (0b110 << 12); // oc2m mode 1
+		TIM3->CCMR2 |= (0b110 << 4); // oc3m mode 1
 
 		TIM3->CCER = 0x0;		
 		TIM3->CCER |= (0b1 << 0);		
@@ -162,6 +162,8 @@ void tim3_set_compare_register(pwm_channel_t channel, uint16_t value)
 				break;
 			case PWM_CH4:
 				TIM3->CCR4 = scaled;
+				break;
+			default:
 				break;
 		}
 
