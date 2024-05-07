@@ -24,10 +24,22 @@
  */
 static void run_simulation(void)
 {
-    //Loop through columns
-    for (uint16_t j = 0; j < ARRAY_COLUMNS; j++) {
-        //Loop through rows
-        for (uint16_t i = 0; i < ARRAY_ROWS; i++) {
+		//Loop through columns
+		// for (uint16_t j = 0; j < ARRAY_COLUMNS; j++) {
+		// 		//Loop through rows
+		// 		for (uint16_t i = 0; i < ARRAY_ROWS; i++) {
+		// 
+    //         // Replaces a[x, y] = b[x, y] + c[x, y]
+    //         a_equals_b_plus_c(i, j);
+    //     }
+    // }
+	
+		// IMPROVED VERSION
+		//Loop through rows
+		for (uint16_t i = 0; i < ARRAY_ROWS; i++) {
+				//Loop through columns
+				for (uint16_t j = 0; j < ARRAY_COLUMNS; j++) {
+		
             // Replaces a[x, y] = b[x, y] + c[x, y]
             a_equals_b_plus_c(i, j);
         }

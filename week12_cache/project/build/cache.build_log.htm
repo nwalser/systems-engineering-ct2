@@ -1,0 +1,125 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ÂµVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Nathaniel Walser
+ZHAW
+User-based license: Keil MDK Community (non-commercial free of charge)
+Valid until: Jun 1 2033. Cached until: May 6 2024
+ 
+Tool Versions:
+Toolchain:       Keil MDK Community (non-commercial free of charge  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.1.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\NathanielWalser\Documents\Repositories\systems-engineering-ct2\week12_cache\project\cache.uvprojx
+Project File Date:  05/07/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+assembling datainit_ctboard.s...
+assembling startup_ctboard.s...
+compiling main.c...
+compiling cache.c...
+compiling simulation.c...
+compiling arrays.c...
+compiling system_ctboard.c...
+compiling hal_ct_lcd.c...
+compiling hal_ct_seg7.c...
+compiling hal_fmc.c...
+compiling hal_pwr.c...
+compiling hal_rcc.c...
+compiling hal_gpio.c...
+compiling hal_timer.c...
+linking...
+Program Size: Code=12044 RO-data=1696 RW-data=4 ZI-data=8248  
+".\build\cache.axf" - 0 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: InES
+                https://ennis.zhaw.ch/pack/InES.CTBoard14_DFP.4.0.4.pack
+                InES.CTBoard14_DFP.4.0.4
+                CT Board 14 (STM32F429ZI) Device Support
+   * Component: Startup Version: 4.0.4
+   * Component: 7 segment Version: 4.0.4
+   * Component: LCD Version: 3.0.3
+   * Component: FMC Version: 4.0.4
+   * Component: GPIO Version: 4.0.4
+   * Component: PWR Version: 4.0.4
+   * Component: RCC Version: 4.0.4
+   * Component: TIMER Version: 4.0.4
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/Device/Include
+  C:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/Device/Include/m4
+  C:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/HAL/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: InES::Device:Startup:4.0.4
+      Include file:  Device/Include/m4/platform_ctboard.h
+      Include file:  Device/Include/reg_stm32f4xx.h
+      Include file:  Device/Include/system_ctboard.h
+      Source file:   Device/Source/system_ctboard.c
+      Include file:  Device/Include/reg_ctboard.h
+      Source file:   Device/Source/startup_ctboard.s
+      Source file:   Device/Source/datainit_ctboard.s
+
+   * Component: InES::HAL:CT Board:7 segment:4.0.4
+      Source file:   HAL/Source/hal_ct_seg7.c
+      Include file:  HAL/Include/hal_ct_seg7.h
+      Include file:  Device/Include/reg_ctboard.h
+
+   * Component: InES::HAL:CT Board:LCD:3.0.3
+      Include file:  Device/Include/reg_ctboard.h
+      Include file:  HAL/Include/hal_ct_lcd.h
+      Source file:   HAL/Source/hal_ct_lcd.c
+
+   * Component: InES::HAL:FMC:4.0.4
+      Include file:  Device/Include/reg_stm32f4xx.h
+      Include file:  HAL/Include/hal_fmc.h
+      Include file:  HAL/Include/hal_common.h
+      Source file:   HAL/Source/hal_fmc.c
+
+   * Component: InES::HAL:GPIO:4.0.4
+      Include file:  Device/Include/reg_stm32f4xx.h
+      Include file:  HAL/Include/hal_gpio.h
+      Include file:  HAL/Include/hal_common.h
+      Source file:   HAL/Source/hal_gpio.c
+
+   * Component: InES::HAL:PWR:4.0.4
+      Include file:  Device/Include/reg_stm32f4xx.h
+      Include file:  HAL/Include/hal_common.h
+      Include file:  HAL/Include/hal_pwr.h
+      Source file:   HAL/Source/hal_pwr.c
+
+   * Component: InES::HAL:RCC:4.0.4
+      Source file:   HAL/Source/hal_rcc.c
+      Include file:  Device/Include/reg_stm32f4xx.h
+      Include file:  HAL/Include/hal_rcc.h
+      Include file:  HAL/Include/hal_common.h
+
+   * Component: InES::HAL:TIMER:4.0.4
+      Include file:  Device/Include/reg_stm32f4xx.h
+      Source file:   HAL/Source/hal_timer.c
+      Include file:  HAL/Include/hal_common.h
+      Include file:  HAL/Include/hal_timer.h
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

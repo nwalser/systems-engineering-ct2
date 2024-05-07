@@ -1,0 +1,107 @@
+Dependencies for Project 'cache', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 6190000::V6.19::ARMCLANG
+F (.\app\arrays.c)(0x662FAF6D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/Device/Include-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/Device/Include/m4-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/HAL/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./build/arrays.o -MD)
+I (app\arrays.h)(0x662FAF6D)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63889D68)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x63889D68)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x63889D68)
+I (app\simulation.h)(0x662FAF6E)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\HAL\Include\hal_ct_seg7.h)(0x64B92902)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x63889D68)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\Device\Include\reg_ctboard.h)(0x64B92844)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\HAL\Include\hal_ct_lcd.h)(0x622876D0)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\HAL\Include\hal_timer.h)(0x64B929BE)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\Device\Include\reg_stm32f4xx.h)(0x64B92C4E)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\HAL\Include\hal_common.h)(0x64B928D4)
+I (app\cache.h)(0x662FAF6D)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x63889D68)
+I (app\config.h)(0x663A0C86)
+F (.\app\cache.c)(0x662FAF6D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/Device/Include-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/Device/Include/m4-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/HAL/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./build/cache.o -MD)
+I (app\cache.h)(0x662FAF6D)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63889D68)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x63889D68)
+I (app\config.h)(0x663A0C86)
+F (.\app\main.c)(0x663A0CFD)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/Device/Include-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/Device/Include/m4-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/HAL/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./build/main.o -MD)
+I (app\simulation.h)(0x662FAF6E)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\HAL\Include\hal_ct_seg7.h)(0x64B92902)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63889D68)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x63889D68)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\Device\Include\reg_ctboard.h)(0x64B92844)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\HAL\Include\hal_ct_lcd.h)(0x622876D0)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\HAL\Include\hal_timer.h)(0x64B929BE)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\Device\Include\reg_stm32f4xx.h)(0x64B92C4E)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\HAL\Include\hal_common.h)(0x64B928D4)
+I (app\arrays.h)(0x662FAF6D)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x63889D68)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x63889D68)
+I (app\config.h)(0x663A0C86)
+I (app\cache.h)(0x662FAF6D)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x63889D68)
+F (.\app\simulation.c)(0x662FAF6D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/Device/Include-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/Device/Include/m4-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/HAL/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./build/simulation.o -MD)
+I (app\simulation.h)(0x662FAF6E)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\HAL\Include\hal_ct_seg7.h)(0x64B92902)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63889D68)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x63889D68)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\Device\Include\reg_ctboard.h)(0x64B92844)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\HAL\Include\hal_ct_lcd.h)(0x622876D0)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\HAL\Include\hal_timer.h)(0x64B929BE)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\Device\Include\reg_stm32f4xx.h)(0x64B92C4E)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\HAL\Include\hal_common.h)(0x64B928D4)
+I (app\arrays.h)(0x662FAF6D)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x63889D68)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x63889D68)
+I (app\config.h)(0x663A0C86)
+I (app\cache.h)(0x662FAF6D)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x63889D68)
+F (RTE/Device/CT_Board_HS14_M4/datainit_ctboard.s)(0x64A6797E)(--target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4-I./RTE/_Target_1-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/Device/Include-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/Device/Include/m4-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/HAL/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 538" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o ./build/datainit_ctboard.o)
+F (RTE/Device/CT_Board_HS14_M4/startup_ctboard.s)(0x622876D0)(--target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4-I./RTE/_Target_1-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/Device/Include-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/Device/Include/m4-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/HAL/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 538" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o ./build/startup_ctboard.o)
+F (RTE/Device/CT_Board_HS14_M4/system_ctboard.c)(0x64E4BF16)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/Device/Include-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/Device/Include/m4-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/HAL/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./build/system_ctboard.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63889D68)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x63889D68)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\Device\Include\system_ctboard.h)(0x64B633DC)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\Device\Include\m4\platform_ctboard.h)(0x622876D0)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\HAL\Include\hal_gpio.h)(0x64B92962)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\Device\Include\reg_stm32f4xx.h)(0x64B92C4E)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\HAL\Include\hal_common.h)(0x64B928D4)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\HAL\Include\hal_fmc.h)(0x64B9294E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x63889D68)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\HAL\Include\hal_pwr.h)(0x622876D0)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\HAL\Include\hal_rcc.h)(0x64B91C66)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\Device\Include\reg_ctboard.h)(0x64B92844)
+F (RTE/HAL/CT_Board_HS14_M4/hal_ct_lcd.c)(0x622876D0)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/Device/Include-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/Device/Include/m4-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/HAL/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./build/hal_ct_lcd.o -MD)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\HAL\Include\hal_ct_lcd.h)(0x622876D0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63889D68)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\Device\Include\reg_ctboard.h)(0x64B92844)
+F (RTE/HAL/CT_Board_HS14_M4/hal_ct_seg7.c)(0x64B91D38)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/Device/Include-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/Device/Include/m4-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/HAL/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./build/hal_ct_seg7.o -MD)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\HAL\Include\hal_ct_seg7.h)(0x64B92902)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63889D68)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x63889D68)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\Device\Include\reg_ctboard.h)(0x64B92844)
+F (RTE/HAL/CT_Board_HS14_M4/hal_fmc.c)(0x64B92E00)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/Device/Include-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/Device/Include/m4-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/HAL/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./build/hal_fmc.o -MD)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\HAL\Include\hal_fmc.h)(0x64B9294E)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\HAL\Include\hal_common.h)(0x64B928D4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63889D68)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x63889D68)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\Device\Include\reg_stm32f4xx.h)(0x64B92C4E)
+F (RTE/HAL/CT_Board_HS14_M4/hal_gpio.c)(0x64B69FBE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/Device/Include-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/Device/Include/m4-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/HAL/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./build/hal_gpio.o -MD)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\HAL\Include\hal_gpio.h)(0x64B92962)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\Device\Include\reg_stm32f4xx.h)(0x64B92C4E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63889D68)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\HAL\Include\hal_common.h)(0x64B928D4)
+F (RTE/HAL/CT_Board_HS14_M4/hal_pwr.c)(0x64B633DC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/Device/Include-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/Device/Include/m4-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/HAL/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./build/hal_pwr.o -MD)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\HAL\Include\hal_pwr.h)(0x622876D0)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\HAL\Include\hal_common.h)(0x64B928D4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63889D68)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\Device\Include\reg_stm32f4xx.h)(0x64B92C4E)
+F (RTE/HAL/CT_Board_HS14_M4/hal_rcc.c)(0x64B92E4A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/Device/Include-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/Device/Include/m4-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/HAL/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./build/hal_rcc.o -MD)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\HAL\Include\hal_rcc.h)(0x64B91C66)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\HAL\Include\hal_common.h)(0x64B928D4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63889D68)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x63889D68)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\Device\Include\reg_stm32f4xx.h)(0x64B92C4E)
+F (RTE/HAL/CT_Board_HS14_M4/hal_timer.c)(0x64B92E8C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/Device/Include-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/Device/Include/m4-IC:/Users/NathanielWalser/AppData/Local/Arm/Packs/InES/CTBoard14_DFP/4.0.4/HAL/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./build/hal_timer.o -MD)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\HAL\Include\hal_timer.h)(0x64B929BE)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\Device\Include\reg_stm32f4xx.h)(0x64B92C4E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63889D68)
+I (C:\Users\NathanielWalser\AppData\Local\Arm\Packs\InES\CTBoard14_DFP\4.0.4\HAL\Include\hal_common.h)(0x64B928D4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x63889D68)

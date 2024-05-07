@@ -34,7 +34,7 @@
  * --------------------------------------------------------------- */
 
 /* Row count of the arrays */
-#define ARRAY_ROWS 5
+#define ARRAY_ROWS 50
 
 /* Column count of the arrays */
 #define ARRAY_COLUMNS 10
