@@ -59,8 +59,8 @@ typedef enum {
 
     /// STUDENTS: To be programmed
 
-
-
+		F0_WAITING,
+		F1_WAITING,
 
     /// END: To be programmed
    
@@ -125,13 +125,25 @@ void fsm_handle_event(event_t event)
 						break;
 					case EV_BUTTON_F1:
 						ah_door(DOOR_LOCK);
-						ah_motor(MOTOR_UP);
-						ah_show_state("MOVING_UP");
-						state = MOVING_UP;
+						timer_start(150);
+						ah_show_state("F0_WAITING");
+						state = F0_WAITING;
 						break;
 					default: break;
 				}
 				break;
+				
+			case F0_WAITING:
+				switch(event){
+						case EV_TIMEOUT:
+							ah_motor(MOTOR_UP);
+							ah_show_state("MOVING_UP");
+							state = MOVING_UP;
+							break;
+						default: break;
+				}
+				break;
+
 				
 			case MOVING_UP:
 				switch(event){
@@ -155,11 +167,22 @@ void fsm_handle_event(event_t event)
 					
 					case EV_BUTTON_F0:
 						ah_door(DOOR_LOCK);
-						ah_motor(MOTOR_DOWN);
-						ah_show_state("MOVING_DOWN");
-						state = MOVING_DOWN;
+						timer_start(150);
+						ah_show_state("F1_WAITING");
+						state = F1_WAITING;
 						break;
 					default: break;
+				}
+				break;
+				
+			case F1_WAITING:
+				switch(event){
+						case EV_TIMEOUT:
+							ah_motor(MOTOR_DOWN);
+							ah_show_state("MOVING_DOWN");
+							state = MOVING_DOWN;
+							break;
+						default: break;
 				}
 				break;
 				
@@ -173,7 +196,7 @@ void fsm_handle_event(event_t event)
 					default: break;
 				}
 				break;
-			
+				
 			case MOVING_DOWN:
 				switch(event){
 					case EV_F0_REACHED:
