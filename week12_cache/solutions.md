@@ -25,9 +25,9 @@ Zeilen: i = 2 -> 2^2 = 4 Zeilen
 Grösse Zeile: o = 2 -> 2^2 = 4 Bytes Nutzdaten
 Grösse Cache Nutzdaten: 16 Bytes
  
-Index bestimmt Anzahl Zeilen im Cache
-Offset bestimmt Anzahl Bytes in einer Cache Zeile
-__ einer Memory...
+Anzahl der Indexbits bestimmt Anzahl Zeilen im Cache
+Anzahl der Offsetbits bestimmt Anzahl Bytes in einer Cache Zeile
+Index einer Memory...
 Tag zeigt, welcher....
 
 # 3.2
@@ -47,10 +47,10 @@ Miss-Rate: 100%
 
 ## Tabelle
 b[0][0], 0x32, miss, Zeile 0
-c[0][0], 0x64, miss, Zeile 0
+c[0][0], 0x64, miss, Zeile 1
 a[0][0], 0x00, miss, Zeile 0
-b[1][0], 0x3C, miss, Zeile 2
-c[1][0], 0x6E, miss, Zeile 2
+b[1][0], 0x3C, miss, Zeile 3
+c[1][0], 0x6E, miss, Zeile 3
 a[1][0], 0x0A, miss, Zeile 2
 b[2][0], 0x46, miss, Zeile 1
 
